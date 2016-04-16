@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle debugger-ruby",
+        "command": "debugger-ruby:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "debugger-ruby",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "debugger-ruby:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
