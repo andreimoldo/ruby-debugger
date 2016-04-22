@@ -27,7 +27,11 @@
   <atom-panel class="top padded container-breakpoints">
     <div class="inset-panel">
       <div class="panel-heading">Breakpoints</div>
-      <div class="panel-body"></div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-item padded" rv-each-breakpoint="context.breakpoints">{breakpoint.location}</li>
+        </ul>
+      </div>
     </div>
   </atom-panel>
 </div>
