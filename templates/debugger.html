@@ -32,8 +32,11 @@
     <div class="inset-panel">
       <div class="panel-heading">Breakpoints</div>
       <div class="panel-body">
-        <ul class="list-group">
-          <li class="list-item padded" rv-each-breakpoint="context.breakpoints">{breakpoint.location}</li>
+        <ul class="list-group padded">
+          <li class="list-item breakpoint-item" rv-each-breakpoint="context.breakpoints">
+            <span class="breakpoint-text">{breakpoint.location}</span>
+            <span class="icon icon-trashcan" rv-on-click="onClickDeleteBreakpoint"></span>
+          </li>
         </ul>
       </div>
     </div>
