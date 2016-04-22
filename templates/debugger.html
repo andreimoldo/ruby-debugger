@@ -1,14 +1,18 @@
-<div class="container-header block">
+<div class="container-header">
   <div class="inline-block">
     <span class="icon icon-rocket"></span>
     <span class=header-title>Ruby Debugger</span>
   </div>
-  <div class="inline-block btn-group">
-    <button class="btn status" rv-button-status="context.state.current" rv-on-click="onClickStatus"></button>
-    <button class="btn resume" rv-button-debugger-action="context.state.current" rv-on-click="onClickPlay">Resume</button>
-    <button class="btn step-in" rv-button-debugger-action="context.state.current">Step In</button>
-    <button class="btn step-out" rv-button-debugger-action="context.state.current">Step Out</button>
-    <button class="btn step-oover" rv-button-debugger-action="context.state.current">Step Over</button>
+  <div class="inline-block btn-toolbar">
+    <div class="btn-group">
+      <button class="btn status" rv-button-status="context.state.current" rv-on-click="onClickStatus"></button>
+    </div>
+    <div class="btn-group">
+      <button class="btn resume" rv-button-debugger-action="context.state.current" rv-on-click="onClickPlay">Resume</button>
+      <button class="btn step-in" rv-on-click="onClickDeleteBreakpoint">Step In</button>
+      <button class="btn step-out" rv-button-debugger-action="context.state.current">Step Out</button>
+      <button class="btn step-over" rv-button-debugger-action="context.state.current">Step Over</button>
+    </div>
   </div>
 </div>
 <div class="container-data">
