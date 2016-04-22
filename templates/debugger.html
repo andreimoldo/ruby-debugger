@@ -5,16 +5,16 @@
   </div>
   <div class="inline-block btn-group">
     <button class="btn status" rv-button-status="context.state.current" rv-on-click="onClickStatus"></button>
-    <button class="btn resume" rv-button-debugger-action="context.state.current">Resume</button>
+    <button class="btn resume" rv-button-debugger-action="context.state.current" rv-on-click="onClickPlay">Resume</button>
     <button class="btn step-in" rv-button-debugger-action="context.state.current">Step In</button>
     <button class="btn step-out" rv-button-debugger-action="context.state.current">Step Out</button>
     <button class="btn step-oover" rv-button-debugger-action="context.state.current">Step Over</button>
   </div>
 </div>
 <div class="container-data">
-  <atom-panel class="top padded container-frames">
+  <atom-panel class="top padded container-stack">
     <div class="inset-panel">
-      <div class="panel-heading">Frames</div>
+      <div class="panel-heading">Call Stack</div>
       <div class="panel-body"></div>
     </div>
   </atom-panel>
