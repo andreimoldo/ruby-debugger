@@ -4,9 +4,11 @@
     <span class=header-title>Ruby Debugger</span>
   </div>
   <div class="inline-block btn-group">
-    <button class="btn connect" rv-on-click="onClickConnect">
-      { textConnectButton }
-    </button>
+    <button class="btn status" rv-button-status="context.state.current" rv-on-click="onClickStatus"></button>
+    <button class="btn resume" rv-button-debugger-action="context.state.current">Resume</button>
+    <button class="btn step-in" rv-button-debugger-action="context.state.current">Step In</button>
+    <button class="btn step-out" rv-button-debugger-action="context.state.current">Step Out</button>
+    <button class="btn step-oover" rv-button-debugger-action="context.state.current">Step Over</button>
   </div>
 </div>
 <div class="container-data">

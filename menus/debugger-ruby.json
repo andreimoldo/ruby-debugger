@@ -4,6 +4,10 @@
       {
         "label": "Toggle debugger-ruby",
         "command": "debugger-ruby:toggle"
+      },
+      {
+        "label": "Add breakpoint",
+        "command": "debugger-ruby:add-breakpoint"
       }
     ]
   },
