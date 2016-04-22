@@ -1,7 +1,7 @@
 {
   "name": "debugger-ruby",
   "main": "./lib/debugger-ruby",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ruby debugger for Atom.",
   "keywords": [
     "ruby",
@@ -11,7 +11,7 @@
   "activationCommands": {
     "atom-workspace": "debugger-ruby:toggle"
   },
-  "repository": "https://github.com/atom/debugger-ruby",
+  "repository": "https://github.com/andreimoldo/ruby-debugger",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
