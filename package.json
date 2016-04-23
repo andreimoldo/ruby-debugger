@@ -18,9 +18,9 @@
   },
   "dependencies": {
     "javascript-state-machine": "^2.3.5",
+    "lodash": "^4.11.1",
     "q": "^1.4.1",
     "rivets": "https://github.com/mikeric/rivets",
-    "sax": "^1.2.1",
-    "underscore-plus": "^1.6.6"
+    "sax": "^1.2.1"
   }
 }
