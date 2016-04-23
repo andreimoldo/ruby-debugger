@@ -8,6 +8,10 @@
     "debug",
     "debugger"
   ],
+  "author": {
+    "name": "Andrei Moldovan",
+    "email": "andrei.moldovan@gmail.com"
+  },
   "activationCommands": {
     "atom-workspace": "debugger-ruby:toggle"
   },
