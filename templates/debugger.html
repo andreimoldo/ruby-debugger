@@ -9,7 +9,7 @@
     </div>
     <div class="btn-group">
       <button class="btn resume" rv-button-debugger-action="context.state.current" rv-on-click="onClickPlay">Resume</button>
-      <button class="btn step-in" rv-on-click="onClickDeleteBreakpoint">Step In</button>
+      <button class="btn step-in" rv-button-debugger-action="context.state.current">Step In</button>
       <button class="btn step-out" rv-button-debugger-action="context.state.current">Step Out</button>
       <button class="btn step-over" rv-button-debugger-action="context.state.current">Step Over</button>
     </div>
@@ -34,8 +34,9 @@
       <div class="panel-body">
         <ul class="list-group padded">
           <li class="list-item breakpoint-item" rv-each-breakpoint="context.breakpoints">
-            <span class="breakpoint-text">{breakpoint.location}</span>
-            <span class="icon icon-trashcan" rv-on-click="onClickDeleteBreakpoint"></span>
+            <input type="checkbox" rv-checked="breakpoint.enabled" rv-on-click="context.onClickBreakpointStatus" />
+            <span class="breakpoint-text" rv-on-click="context.onClickBreakpoint">{breakpoint.location}</span>
+            <span class="icon icon-trashcan" rv-on-click="context.onClickDeleteBreakpoint"></span>
           </li>
         </ul>
       </div>
