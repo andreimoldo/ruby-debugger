@@ -24,7 +24,7 @@
     "javascript-state-machine": "^2.3.5",
     "lodash": "^4.11.1",
     "q": "^1.4.1",
-    "rivets": "https://github.com/mikeric/rivets",
+    "react-lite": "^0.15.9",
     "sax": "^1.2.1"
   }
 }
